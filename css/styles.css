@@ -78,6 +78,7 @@ img {
   display: flex;
   gap: 40px;
 }
+
 .nav-link {
   display: block;
   font-weight: 500;
@@ -120,13 +121,16 @@ img {
 /* #region Hero */
 .hero {
   padding: 188px 0;
-}
-.hero .container {
   background: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 292px;
-  padding-left: 330px;
 }
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -161,13 +165,11 @@ img {
   padding: 120px 0;
 }
 .benefits-list {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
 .benefits-list-item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 .benefits-list-item-title {
   font-weight: 500;
@@ -196,7 +198,6 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team-list {
@@ -205,7 +206,7 @@ img {
 }
 .team-list-item {
   background-color: #ffffff;
-  width: 264px;
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .team-list-img {
@@ -252,7 +253,7 @@ img {
   row-gap: 48px;
 }
 .portfolio-list-item {
-  width: 360px;
+  width: calc((100% - 48px) / 3);
 }
 .portfolio-list-title {
   font-weight: 500;
